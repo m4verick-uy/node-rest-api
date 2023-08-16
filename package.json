@@ -1,0 +1,19 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Prueba de un proyecto web API en js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "m4verick-uy"
+  },
+  "author": "Guillermo Echichure",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "json": "^11.0.0"
+  }
+}
