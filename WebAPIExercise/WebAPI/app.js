@@ -1,9 +1,7 @@
 
-  const express = require("express");
-  const bodyParser = require("body-parser");
-  const config = require('../config');
-  const Person = require('../Domain/person');
-
+import express from 'express';
+import bodyParser from 'body-parser';
+import PersonRepository from '../DataAccess/PersonRepository.js';
 
   const app = express();
   app.use(bodyParser.json());
@@ -14,7 +12,10 @@
   app.post("/persons", (req, res) => {
     const { name, age, document, description, rol } = req.body;
     const newPerson = { name, age, document, description, rol };
-    persons.push(newPerson);
+    //persons.push(newPerson);
+    const personRepo = new PersonRepository();
+    personRepo.createPerson(newPerson);
+    
     res.json(newPerson);
   });
 
