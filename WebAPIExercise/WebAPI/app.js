@@ -40,32 +40,30 @@ import PersonRepository from '../DataAccess/PersonRepository.js';
     }
   });
 
-  // Get a specific peron by document with SQL request
-
-
 
   // Update a person by document
-  app.put("/persons/:document", (req, res) => {
+  app.put("/persons/:document", async(req, res) => {
     const document = req.params.document;
     const updatedPerson = req.body;
-    const personIndex = persons.findIndex(person => person.document === document);
-    if (personIndex !== -1) {
-      persons[personIndex] = { ...persons[personIndex], ...updatedPerson };
-      res.json(persons[personIndex]);
+    const personRepo = new PersonRepository();
+
+    const result = await personRepo.updatePerson(document, updatedPerson);
+    if(result) {
+      res.json({resultado : 'update exitoso', updatedPerson, document : document}) // Concatena objetos y datos  todo en un JSON
     } else {
-      res.status(404).json({ message: "Person not found" });
+      res.status(404).json({ message: "Failed Update" });
     }
   });
 
   // Delete a person by document
-  app.delete("/persons/:document", (req, res) => {
+  app.delete("/persons/:document", async(req, res) => {
     const document = req.params.document;
-    const personIndex = persons.findIndex(person => person.document === document);
-    if (personIndex !== -1) {
-      const deletedPerson = persons.splice(personIndex, 1)[0];
-      res.json(deletedPerson);
+    const personRepo = new PersonRepository();
+    const personsDeleted = await personRepo.deletePerson(document);
+    if (personsDeleted) {
+      res.json({resultado : 'eliminacion exitosa', personsDeleted});
     } else {
-      res.status(404).json({ message: "Person not found" });
+      res.status(404).json({ message: "Failed Delete" });
     }
   });
 

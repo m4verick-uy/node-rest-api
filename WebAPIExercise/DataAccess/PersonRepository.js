@@ -34,6 +34,27 @@ class PersonRepository {
         return result;
     }
 
+    async updatePerson(document, newPerson){
+        const connection = await mysql.createConnection(config);
+        const query = `
+        UPDATE persons
+        SET name = ?, age = ?, description = ?, rol = ?
+        WHERE document = ?`;
+        
+        const values = [newPerson.name, newPerson.age, newPerson.description, newPerson.rol, document];
+        const [result] = await connection.execute(query,values);
+        connection.end();
+        return result.affectedRows;
+        //se devuelve la cantidad de filas afectadas(deberia ser 1 en caso de exito y 0 en caso que no)
+    }
+
+    async deletePerson(document){
+        const connection = await mysql.createConnection(config);
+        const [result] = await connection.execute('DELETE FROM persons WHERE document = ? ', [document]);
+        connection.end();
+        return result.affectedRows;
+    }
+
     // Implement other CRUD methods here...
 }
 
