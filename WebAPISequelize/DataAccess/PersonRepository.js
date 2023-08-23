@@ -4,11 +4,11 @@ class PersonRepository {
     }
 
     async getAllPersons() {
-        return this.Persons.findAll();
+        return await this.Persons.findAll();
     }
 
     async addPerson(person) {
-        return this.Persons.create({
+        return await this.Persons.create({
             name: person.name,
             age: person.age,
             document: person.document,
