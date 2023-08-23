@@ -1,0 +1,14 @@
+{
+  "name": "WebAPISequelize",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "json": "^11.0.0",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.20.2"
+  }
+}

@@ -1,0 +1,9 @@
+# Rider files
+.idea
+
+# MacOS Files
+.DS_Store
+
+# Config File
+.config.js
+
