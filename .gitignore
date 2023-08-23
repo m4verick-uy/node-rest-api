@@ -5,5 +5,5 @@
 .DS_Store
 
 # Config File
-.config.js
+config.js
 
