@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebAPISequelize/DataAccess/DbContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources/4a35709c-40ed-4b0d-bfbd-a692ecc1936b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources/4a35709c-40ed-4b0d-bfbd-a692ecc1936b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/WebAPI/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/WebAPI/Controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebAPIExercise/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebAPISequelize/package-lock.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WheatherExcercise/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
@@ -79,7 +83,7 @@
       <workItem from="1692210961712" duration="4839000" />
       <workItem from="1692292098799" duration="16914000" />
       <workItem from="1692756538813" duration="2935000" />
-      <workItem from="1692759485813" duration="2690000" />
+      <workItem from="1692759485813" duration="9924000" />
     </task>
     <servers />
   </component>
