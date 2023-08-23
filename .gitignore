@@ -1,1 +1,14 @@
+# Rider files
+.idea/
+
+# Node.js dependencies
+node_modules/
+
+# Configuration file
 config.js
+
+# macOS system files
+.DS_Store
+
+# Editor-specific files
+.vscode/

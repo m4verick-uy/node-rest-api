@@ -4,7 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="" />
+    <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,12 +58,12 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="TestPracticeExamples.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/TestPracticeExamples.js" working-dir="$PROJECT_DIR$">
+    <configuration name="WebApiRunning.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="WebAPISequelize/WebAPI/Controller.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.TestPracticeExamples.js" />
+        <item itemvalue="Node.js.WebApiRunning.js" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +79,7 @@
       <workItem from="1692210961712" duration="4839000" />
       <workItem from="1692292098799" duration="16914000" />
       <workItem from="1692756538813" duration="2935000" />
-      <workItem from="1692759485813" duration="1152000" />
+      <workItem from="1692759485813" duration="2690000" />
     </task>
     <servers />
   </component>
