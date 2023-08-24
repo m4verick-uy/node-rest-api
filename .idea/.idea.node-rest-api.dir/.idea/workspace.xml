@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources/4a35709c-40ed-4b0d-bfbd-a692ecc1936b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources/4a35709c-40ed-4b0d-bfbd-a692ecc1936b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/DataAccess/DbContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/DataAccess/DbContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/DataAccess/PersonRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/WebAPI/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/WebAPI/Controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPISequelize/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPISequelize/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +86,7 @@
       <workItem from="1692210961712" duration="4839000" />
       <workItem from="1692292098799" duration="16914000" />
       <workItem from="1692756538813" duration="2935000" />
-      <workItem from="1692759485813" duration="10306000" />
+      <workItem from="1692759485813" duration="15956000" />
     </task>
     <servers />
   </component>

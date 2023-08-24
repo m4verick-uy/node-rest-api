@@ -7,7 +7,7 @@ const sequelize = new Sequelize(databaseConfig);
 class DbContext {
     constructor() {
         // Define the Person model
-        this.Persons = sequelize.define('Persons', {
+        this.Person = sequelize.define('Person', {
             name: {
                 type: DataTypes.STRING,
                 allowNull: false,
@@ -30,7 +30,7 @@ class DbContext {
         },
         {
             // Explicitly set the table name
-            tableName: 'Persons'
+            tableName: 'Person'
         });
 
         this.initializeDatabase();
