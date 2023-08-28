@@ -15,6 +15,12 @@ const dbContext = new DbContext(sequelize);
 const personRepo = new PersonRepository(dbContext);
 const jobRepo = new JobRepository(dbContext);
 
+sequelize.sync().then(() => {
+    console.log('Base de datos sincronizada');
+}).catch(error => {
+    console.error('Error al sincronizar la base de datos:', error);
+});
+
 
 app.post("/persons", async (req, res) => {
     const { name, age, document, description, rol, jobId } = req.body;
@@ -79,8 +85,8 @@ app.listen(portForHTTP, () => {
 //-------------------------------JOB CONTROLLER--------------------------------------
 
 app.post("/jobs", async (req, res) => {
-    const { title, company, startDate} = req.body;
-    const newJob = { title, company, startDate};
+    const { title, company, startDate, projects} = req.body;
+    const newJob = { title, company, startDate, projects};
 
     try {
         await jobRepo.addJob(newJob);
@@ -88,5 +94,16 @@ app.post("/jobs", async (req, res) => {
     } catch (error) {
         console.error("Error creating job:", error);
         res.status(500).json({ error: "Error creating job", details: error.message });
+    }
+});
+
+app.get("/jobs/:id", async (req, res) => {
+    try{
+        const jobId = req.params.id;
+        const job = await jobRepo.findJob(jobId)
+        res.json(job);
+    }catch (error){
+        console.error("Error getting job", error);
+        res.status(500).json({error: "Error getting job", details: error.message});
     }
 });

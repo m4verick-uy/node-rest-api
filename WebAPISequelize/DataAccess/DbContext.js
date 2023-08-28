@@ -1,6 +1,7 @@
 import {DataTypes, Sequelize} from 'sequelize';
 import {databaseConfig} from '../config.js';
 import Job from '../Domain/Job.js';
+import Project from '../Domain/Project.js';
 
 
 const sequelize = new Sequelize(databaseConfig);
@@ -50,11 +51,42 @@ class DbContext {
             },
             startDate:{
                 type: DataTypes.DATE,
-            }
+            },
+            /*projects:{
+                type: Project,
+                references: {
+                    model : 'project',
+                    key: 'id'
+                }
+            }*/
         },
         {
             tableName: 'Jobs'
         });
+        this.Project = sequelize.define('Project', {
+           name: {
+            type: DataTypes.STRING,
+           },
+           duration: {
+            type: DataTypes.NUMBER
+           },
+           startDate: {
+            type: DataTypes.DATE
+           },
+            jobId:{
+              type: DataTypes.INTEGER,
+              references: {
+                model: 'jobs', // Nombre de la tabla de trabajos
+                key: 'id',  
+            } 
+        }
+        },
+        {
+            tableName: 'Project'
+        })
+        this.Job.hasMany(this.Project, { foreignKey: 'jobId' }); // Una trabajo tiene muchos proyectos
+        this.Project.belongsTo(this.Job, { foreignKey: 'jobId' }); // Un proyecto pertenece a un trabajo
+
         this.initializeDatabase();
     }
     
