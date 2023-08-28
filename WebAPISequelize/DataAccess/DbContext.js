@@ -1,5 +1,6 @@
 import {DataTypes, Sequelize} from 'sequelize';
 import {databaseConfig} from '../config.js';
+import Job from '../Domain/Job.js';
 
 
 const sequelize = new Sequelize(databaseConfig);
@@ -27,12 +28,33 @@ class DbContext {
             rol: {
                 type: DataTypes.STRING,
             },
+            jobId: {
+                type: DataTypes.INTEGER,
+                references: {
+                    model: 'jobs', // Nombre de la tabla de trabajos
+                    key: 'id',  
+                },
+            }
         },
         {
             // Explicitly set the table name
             tableName: 'Person'
         });
-
+        // Define Job Model
+        this.Job = sequelize.define('Jobs', {
+            title: {
+                type: DataTypes.STRING,
+            },
+            company: {
+                type: DataTypes.STRING,
+            },
+            startDate:{
+                type: DataTypes.DATE,
+            }
+        },
+        {
+            tableName: 'Jobs'
+        });
         this.initializeDatabase();
     }
     

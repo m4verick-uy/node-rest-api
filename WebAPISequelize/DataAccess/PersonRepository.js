@@ -14,6 +14,7 @@ class PersonRepository {
             document: person.document,
             description: person.description,
             rol: person.rol,
+            jobId: person.jobId,
         });
     }
 

@@ -4,6 +4,8 @@ import { Sequelize } from 'sequelize';
 import { databaseConfig, portForHTTP } from '../config.js';
 import DbContext from '../DataAccess/DbContext.js';
 import PersonRepository from '../DataAccess/PersonRepository.js';
+import JobRepository from '../DataAccess/JobRepository.js';
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -11,11 +13,12 @@ const sequelize = new Sequelize(databaseConfig);
 
 const dbContext = new DbContext(sequelize);
 const personRepo = new PersonRepository(dbContext);
+const jobRepo = new JobRepository(dbContext);
 
 
 app.post("/persons", async (req, res) => {
-    const { name, age, document, description, rol } = req.body;
-    const newPerson = { name, age, document, description, rol };
+    const { name, age, document, description, rol, jobId } = req.body;
+    const newPerson = { name, age, document, description, rol, jobId };
 
     try {
         await personRepo.addPerson(newPerson);
@@ -71,4 +74,19 @@ app.delete("/persons/:document", (req, res) => {
 
 app.listen(portForHTTP, () => {
     console.log("Server is running on port", portForHTTP);
+});
+
+//-------------------------------JOB CONTROLLER--------------------------------------
+
+app.post("/jobs", async (req, res) => {
+    const { title, company, startDate} = req.body;
+    const newJob = { title, company, startDate};
+
+    try {
+        await jobRepo.addJob(newJob);
+        res.json(newJob);
+    } catch (error) {
+        console.error("Error creating job:", error);
+        res.status(500).json({ error: "Error creating job", details: error.message });
+    }
 });
