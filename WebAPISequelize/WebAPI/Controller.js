@@ -15,11 +15,6 @@ const dbContext = new DbContext(sequelize);
 const personRepo = new PersonRepository(dbContext);
 const jobRepo = new JobRepository(dbContext);
 
-sequelize.sync().then(() => {
-    console.log('Base de datos sincronizada');
-}).catch(error => {
-    console.error('Error al sincronizar la base de datos:', error);
-});
 
 
 app.post("/persons", async (req, res) => {

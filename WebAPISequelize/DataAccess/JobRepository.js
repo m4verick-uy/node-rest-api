@@ -4,6 +4,7 @@ class JobRepository{
     constructor(dbContext){
         this.Job = dbContext.Job;
         this.Project = dbContext.Project;
+        this.Person = dbContext.Person;
     }
     async addJob(job){
         return await this.Job.create({
@@ -19,7 +20,10 @@ class JobRepository{
             where: {
                 id: jobId
             },
-            include: this.Project // Incluir proyectos asociados al trabajo
+            include: [
+                this.Project,
+                this.Person
+            ]// Incluir proyectos asociados al trabajo
         });
     }
 }

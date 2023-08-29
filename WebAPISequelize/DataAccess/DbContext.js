@@ -22,6 +22,7 @@ class DbContext {
                 type: DataTypes.STRING,
                 allowNull: false,
                 unique: true,
+                primaryKey: true,
             },
             description: {
                 type: DataTypes.STRING,
@@ -86,6 +87,8 @@ class DbContext {
         })
         this.Job.hasMany(this.Project, { foreignKey: 'jobId' }); // Una trabajo tiene muchos proyectos
         this.Project.belongsTo(this.Job, { foreignKey: 'jobId' }); // Un proyecto pertenece a un trabajo
+        this.Job.hasMany(this.Person,{foreignKey: 'jobId'}); // Un trabajo tiene muchos empleados
+        this.Person.belongsTo(this.Job,{foreignKey: 'jobId'});
 
         this.initializeDatabase();
     }
