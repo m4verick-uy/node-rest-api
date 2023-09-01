@@ -36,6 +36,26 @@ class PersonRepository {
             throw new Error(`Person with document ${document} not found`);
         }
     }
+
+    async deletePerson(document){
+        console.log("entre al delete repo")
+        try {
+            const deletedRows = await this.Person.destroy({
+                where: {
+                    document: document
+                }
+            });
+    
+            if (deletedRows > 0) {
+                console.log(deletedRows)
+                return "Person deleted successfully";
+            } else {
+                return "No person found with that document";
+            }
+        } catch (error) {
+            return "An error occurred while deleting the person: " + error.message;
+        }
+}
 }
 
 export default PersonRepository;
