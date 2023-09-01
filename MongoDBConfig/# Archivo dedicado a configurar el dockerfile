@@ -1,0 +1,11 @@
+# Archivo dedicado a configurar el dockerfile
+
+FROM mongo:latest
+
+#Variables de entorno para configurar el usuario y la contraseña 
+
+
+# Copia un script de inicialiación a la carpeta /docker-entrypoint-initdb..d/
+# Este script se ejecutará cuando se inicie el contenedor y creará un usuario y contraseña
+
+COPY init-user-db.js /docker-entrypoint-initdb.d/
