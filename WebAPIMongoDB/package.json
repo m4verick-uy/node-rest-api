@@ -1,0 +1,20 @@
+{
+  "name": "webapimongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "m4verick-uy"
+  },
+  "keywords": [],
+  "author": "Guillermo Echichure",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.5"
+  }
+}
