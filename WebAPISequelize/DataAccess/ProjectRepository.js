@@ -7,9 +7,17 @@ class ProjectRepository{
         return await this.Project.create({
             name: project.name,
             duration: project.duration,
-            startdDate: project.startdDate,
+            startDate: project.startDate,
             jobId: project.jobId
         });
     }
-    
+ 
+    async getProject(idProject){
+        return await this.Project.findOne({
+            where: {
+                id: idProject
+            }
+        });
+    }
 }
+export default ProjectRepository;
