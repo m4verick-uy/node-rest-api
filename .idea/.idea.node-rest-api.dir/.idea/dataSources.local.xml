@@ -19,7 +19,7 @@
       <user-name>gechichure</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" negative="1" />
+          <node kind="schema" qname="mongoDBTest" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

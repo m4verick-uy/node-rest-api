@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MongoDBConfig/init-mongo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MongoDBConfig/# Archivo dedicado a configurar el dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MongoDBConfig/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/MongoDBConfig/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MongoDBConfig/init-user-db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/MyContext/DbContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/MyContext/DbContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <workItem from="1693574317204" duration="740000" />
       <workItem from="1693578426348" duration="310000" />
       <workItem from="1693578762136" duration="3558000" />
-      <workItem from="1694048057149" duration="16261000" />
+      <workItem from="1694048057149" duration="19118000" />
     </task>
     <servers />
   </component>
