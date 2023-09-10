@@ -1,5 +1,0 @@
-Comandos para correr el docker file
-
-docker build -t mongodb .
-
-docker run -d --name mongo-container -p 27017:27017 mongodb

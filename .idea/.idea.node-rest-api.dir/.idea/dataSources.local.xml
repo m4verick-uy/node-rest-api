@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RD-222.4459.9">
-    <data-source name="webAPIMongoDB" uuid="2033021b-3d84-4558-8cb5-f60e2ad2b1d7">
-      <database-info product="Mongo DB" version="7.0.0" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="7.0.0" exact-driver-version="1.18" />
+    <data-source name="@cluster0.eyfhlmx.mongodb.net" uuid="3f5e7499-d5bf-451f-81b1-f9c68d6c7185">
+      <database-info product="Mongo DB" version="6.0.9" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="6.0.9" exact-driver-version="1.18" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <user-name>admin</user-name>
+      <user-name>gechichure</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="myDatabase" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="mongoDBTest" uuid="ab19b6a8-8a63-4543-9215-7ac5884fef66">
+      <database-info product="Mongo DB" version="7.0.1" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="7.0.1" exact-driver-version="1.18" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gechichure</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" negative="1" />

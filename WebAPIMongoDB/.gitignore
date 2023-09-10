@@ -22,3 +22,6 @@ logs/
 
 # Environment variables file
 .env
+
+# .gitignore
+config.js
