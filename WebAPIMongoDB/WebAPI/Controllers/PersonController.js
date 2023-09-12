@@ -1,6 +1,6 @@
 
 const express = require('express');
-const personRepo = require('../../DataAccess/MyContext/PersonRepo');
+const personRepo = require('../../DataAccess/PersonRepository');
 
 const router = express.Router();
 

@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d7d0df4-f938-4d9a-89b3-333cba5aaa48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebAPIMongoDB/Controllers/PersonController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/Ejemplo1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/Ejemplo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/Ejemplo3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/Ejemplo4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPIRedis/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-rest-api.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/MyContext/DbContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/MyContext/DbContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/MyContext/PersonRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/DataAccess/PersonRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/Controllers/PersonController.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/Controllers/PersonController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPIMongoDB/WebAPI/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,25 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;HbShouldOpenHtmlAsHb&quot;: &quot;disabled&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HbShouldOpenHtmlAsHb": "disabled",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo",
+      "java.sql.Driver"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="WebApiRunning.js" />
@@ -94,7 +105,7 @@
       <workItem from="1693574317204" duration="740000" />
       <workItem from="1693578426348" duration="310000" />
       <workItem from="1693578762136" duration="3558000" />
-      <workItem from="1694048057149" duration="19118000" />
+      <workItem from="1694048057149" duration="27591000" />
     </task>
     <servers />
   </component>

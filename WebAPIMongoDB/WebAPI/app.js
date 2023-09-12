@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
 const config = require('../properties/config');
-const personController = require('./controllers/PersonController');
+const personController = require('./Controllers/PersonController');
 const mongoose = require('mongoose');
-
 
 
 // Conexión a MongoDB desde MyContext.js

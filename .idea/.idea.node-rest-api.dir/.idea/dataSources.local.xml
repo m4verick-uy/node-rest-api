@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RD-222.4459.9">
     <data-source name="@cluster0.eyfhlmx.mongodb.net" uuid="3f5e7499-d5bf-451f-81b1-f9c68d6c7185">
-      <database-info product="Mongo DB" version="6.0.9" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="6.0.9" exact-driver-version="1.18" />
+      <database-info product="Mongo DB" version="" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="UNKNOWN" exact-version="0" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>gechichure</user-name>
